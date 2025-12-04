@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directores - FICCT</title>
+    <!-- Usamos tu estilo principal -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* ESTILOS ESPECÍFICOS PARA ESTA PÁGINA (DISEÑO V2: VERTICAL) */
+        
+        .director-card {
+            background: rgba(30, 30, 30, 0.6); /* Fondo un poco más sólido pero vidrioso */
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px; /* Bordes más redondeados */
+            padding: 30px 20px;
+            margin-bottom: 20px; /* Separación entre tarjetas */
+            
+            /* CENTRADO VERTICAL */
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            text-align: center;
+            
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); /* Sombra suave */
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote suave */
+        }
+
+        .director-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            background: rgba(40, 40, 40, 0.8);
+            border-color: #d32f2f; /* Borde rojo al pasar el mouse */
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Foto del Director */
+        .director-img {
+            width: 100px;  /* Foto más grande */
+            height: 100px;
+            border-radius: 50%; 
+            object-fit: cover;
+            border: 3px solid #d32f2f; /* Borde rojo FICCT siempre visible */
+            margin-bottom: 15px; /* Espacio debajo de la foto */
+            box-shadow: 0 0 15px rgba(211, 47, 47, 0.4); /* Resplandor rojo */
+        }
+
+        /* Textos */
+        .director-info h3 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .director-info h4 {
+            display: inline-block;
+            background: linear-gradient(90deg, #d32f2f, #b71c1c); /* Fondo rojo degradado */
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 50px; /* Forma de píldora */
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .director-info p {
+            font-size: 0.95rem;
+            color: #e0e0e0;
+            line-height: 1.5;
+            font-style: italic;
+            background: rgba(255,255,255,0.05); /* Fondo muy sutil para el texto */
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- FOTO DE PERFIL PRINCIPAL (LOGO) -->
+        <div class="profile-pic">
+            <img src="https://files.catbox.moe/jkv196.jpg" alt="Logo FICCT" onerror="this.src='https://via.placeholder.com/150/003366/FFFFFF?text=FICCT'">
+        </div>
+
+        <h1>Directores de Carrera</h1>
+        <p class="bio">Autoridades Académicas</p>
+
+        <!-- LISTA DE DIRECTORES -->
+        <div class="links-container">
+            
+            <!-- 1. DIRECTOR INFORMATICA -->
+            <article class="director-card">
+                <img src="https://files.catbox.moe/il5590.jpg" alt="Ing. Villagomez" class="director-img">
+                <div class="director-info">
+                    <h3>Ing. Junior Villagómez Melgar</h3>
+                    <h4>Dir. Ing. Informática & Robotica</h4>
+                    <p>"Hola qué tal, soy el director de informática & Robótica."</p>
+                </div>
+            </article>
+
+            <!-- 2. DIRECTOR SISTEMAS -->
+            <article class="director-card">
+                <img src="https://files.catbox.moe/sy80zm.jpg" alt="Ing. Leonardo Peña" class="director-img">
+                <div class="director-info">
+                    <h3>Ing. Leonardo Vargas Peña</h3>
+                    <h4>Dir. Ing. de Sistemas</h4>
+                    <p>"Hola qué tal, soy el director de Sistemas."</p>
+                </div>
+            </article>
+
+            <!-- 3. DIRECTOR REDES -->
+            <article class="director-card">
+                <img src="https://files.catbox.moe/sfglq7.jpg" alt="Director Redes" class="director-img">
+                <div class="director-info">
+                    <h3>Ing. Jorge Rosales Fuentes</h3>
+                    <h4>Dir. Redes y Telecom.</h4>
+                    <p>"Hola qué tal, soy el director de redes."</p>
+                </div>
+            </article>
+
+            <!-- BOTÓN VOLVER -->
+            <div style="margin-top: 10px;"></div>
+            <a href="index.html" class="link-btn" style="justify-content: center; background: rgba(255,255,255,0.1);">
+                <i class="fas fa-arrow-left"></i> Volver al Inicio
+            </a>
+
+        </div>
+
+        <footer class="footer">
+            <p>© 2025 FICCT Infomarciones Powered @Alba070503</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+
+
